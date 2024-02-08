@@ -22,7 +22,7 @@ The database design is based on the provided entities: Users, Books, and Purchas
 
 4. **Email Notifications**: The use of a message queue system ensures reliable and efficient email delivery. Retry mechanisms and error handling strategies are implemented to handle failures gracefully and ensure high availability of email notification services. Additionally, email templates can be customized to provide personalized and engaging content to recipients.
 
-5. **Security Measures**: Security features such as data encryption, HTTPS support, input validation, and access control mechanisms are implemented to safeguard sensitive information and protect against security threats such as SQL injection, cross-site scripting (XSS), and CSRF attacks.
+5. **payload schema**: The payload schema is used to validate the request body for the API endpoints. This ensures that the data sent to the server is in the expected format and adheres to the defined schema. Tools like Joi can be used to define and validate payload schemas, reducing the risk of invalid or malformed data entering the system.
 
 6. **Scalability and Performance**: The architecture is designed to be scalable and capable of handling increased workload and user traffic. Horizontal scaling strategies such as load balancing and clustering can be employed to distribute traffic across multiple server instances and ensure optimal performance.
 
